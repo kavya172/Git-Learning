@@ -1,0 +1,16 @@
+s This is the weight chart 
+:wq
+
+
+
+
+
+
+
+
+
+:q
+
+
+
+

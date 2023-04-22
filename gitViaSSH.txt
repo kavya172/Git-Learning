@@ -1,0 +1,66 @@
+Github Via SSH Protocal
+
+Secure Socket Shell Protocol
+
+1. SSH Keys
+    way to identify the trusted computers(No passwords)
+
+2.Key Generation
+
+3. Public Key
+    meant to be shared publically 
+
+4.private Keys
+    meant to be kept secure to oneself.
+
+--------------------------------------------
+
+To check if the SSH already exist type 
+    ls -l ~/.SSH
+
+To remove existing SSH 
+    rm -rf .SSH
+
+To generate the ssh keys
+
+RSA 
+CrtptoSystem
+RSA length 768 to 2048
+
+DSA 
+DSA key length 1024
+
+--------------------------------------------------
+
+To generate 
+
+   ssh-keygen => to generate public
+   ssh-keygen -t rsa/dsa -b 4096 -c "any message goes here"
+
+   -t =>type 
+   -b =>length
+   -c => comments
+
+----------------------------------------------------
+Add ssh agent 
+
+eval "$(ssh-agent -s)"
+ssh add ~/.ssh/id_rsa.pub
+-----------------------------------------------------
+Adding SSH to GitHub account
+copy to clip board
+    clip < ~/.ssh/id_rsa.pub
+add in the git repo in ssh keys
+ 
+------------------------------------------------------
+ssh -T -p 443 git@ssh.github.com
+-------------------------------------------------------
+
+Switching remote GitHub URL
+    git remote set-url origin git@github.com:${userName}/${repoName}
+ to swith back 
+    git remote set-url origin ${https url from the repo}
+
+----------------------------------------------------------
+Changing passphrase of SSH Key pair
+    ssh-keygen -p 

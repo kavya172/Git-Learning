@@ -1,0 +1,24 @@
+Git Basics
+
+Version Control System/ Source Control Management System
+
+    1. Repository
+    2. Versions
+    3. Artifacts
+    4.Comparision
+    5. Accountability
+
+Working Directory 
+    This is the root directory of your git project
+
+Staging Area
+    Aslo called as index, this is where all the related changes are built up.
+    marked for commit
+
+Commit Area
+    This is where all the artifats are stacked safely in git database.
+    
+Git can be built 
+    1. From stratch 
+    2. Existing Project 
+    3. By copying

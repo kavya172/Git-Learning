@@ -1,0 +1,11 @@
+Customize Git bash prompt
+
+echo $PS1
+    vi .bashrc
+    vi ~/.bashrc
+       PS1="Kavya Srinivasa \u@\h\w $ "
+    source ~/.bashrc
+
+Colorize Git bash prompt
+
+    

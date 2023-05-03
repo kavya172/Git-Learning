@@ -1,0 +1,54 @@
+Linux part 5 
+
+useradd ${userName}
+    to create the user
+
+To Check the users -> cat etc/passwd
+
+groupadd ${groupName}
+     to create the group
+
+To Check the group -> cat etc/group
+
+To add members to the group
+    Single member
+         group -a ${already existing userName} ${existing group Name}
+    Multiple members
+        group -M ${existing users with commam seaparated} ${existing gp Name}
+
+Link in linux 
+
+ln -> Hard Link 
+    For Backup (Just like creating a copy {automatically})
+ln ${file name of the Backup to be taken} ${BackupFileName}
+
+ln -s -> Soft Link
+    Just Like creating the shortcut
+ln -s ${File Name for which shortcut to be created} ${The fileName for the link}
+
+tar -> It is a archiver used to create multiple files into one.
+    
+    tar -cvf ${Directory Name} ${diectory which should be created  as one}
+
+    tar -xvf ${Directory Name that should be extracted}
+
+    xvf-> extract verbrace forcefully 
+    cvf-> create verbrace forcefully 
+
+gzip -> It is a compression tool used to reduce the size of the file.
+
+    gzip ${directory to be ziped}
+
+gunzip -> to unzip the content of the ziped directory.
+
+    gunzip ${zipped file Name}
+
+wget 
+  To download any file.
+
+wget <url>
+    This will download the file 
+Later we can install it using yum. 
+
+
+

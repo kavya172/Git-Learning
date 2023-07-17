@@ -1,0 +1,54 @@
+To Install 
+    yum install docker -y
+
+To See all the images 
+    docker images
+
+To find images in docker Hub
+    docker search ${searchName}
+
+To download the image from the docker hub to local machine
+    docker pull ${search name}
+
+To give name to the container 
+     docker run -it --name ${container name} ${image name} /bin/bash
+    docker run -it --name kavya ubuntu /bin/bash
+
+    -i -> Interactive mode
+    -t -> terminal 
+
+To check Service is start or not 
+    Service docker status
+
+To start the container 
+    docker start ${container name already present}
+    docker start kavya
+
+To go inside the container
+    docker attach ${container Name}
+
+To see all the containers 
+    docker ps -a 
+        ps -> process status.
+        -a ->< shows all the containers
+    docker ps 
+        shows only running containers
+
+To Stop the container 
+    docker stop ${container name}
+
+To delete the Container 
+    docker rm ${Container name}
+
+To see the difference between the baseimage and the container 
+    docker diff ${container Name} 
+
+To create the image of the container 
+    docker commit ${container Name} ${new image name}
+
+To create the container from the image
+    docker run -it --name ${new Conatiner Name} ${image name from which the container to be made}
+
+
+
+

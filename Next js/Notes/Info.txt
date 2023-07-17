@@ -1,3 +1,129 @@
 Next JS 
 
 =>> It is the React framework for Poduction
+    framework => environment with lot of features.
+    
+=>Next.js is react framework that enables to build superfast and extremly user-friendly static websites.
+=>Full fledge production ready web application using react.
+
+=> The main reason to choose Next.js is its SEO efficiency 
+
+=> File System Based Route.
+     whatever files under pages will become the route
+----------------------------------------------------------------
+=> <Link> Component
+
+    function MyLink({ href, children }) {
+     return (
+           <Link href={href}>
+                <a>{children}</a>
+          </Link>
+         );
+        }
+----------------------------------------------------------------
+=> <Image> tag under next/Image
+
+import Image from 'next/image';
+
+function MyComponent() {
+  return (
+    <div>
+      <Image
+        src="/my-image.jpg"
+        alt="My Image"
+        width={500}
+        height={500}
+        layout="responsive"
+      />
+    </div>
+  );
+}
+
+export default MyComponent;
+
+If we are using the external Image then we should configure that in the 
+next.config.js file.
+
+After adding anything to the configuration file we should rerun the application.
+
+----------------------------------------------------------------------
+
+=> <Head> tag
+
+function MyComponent() {
+  return (
+    <div>
+      <head>
+        <title>My Website</title>
+        <meta name="description" content="This is my website." />
+        <link rel="stylesheet" href="/styles.css" />
+      </head>
+      <h1>Welcome to my website!</h1>
+      <p>This is some text on my website.</p>
+    </div>
+  );
+}
+------------------------------------------
+
+Rest API
+
+getStaticProps() 
+ is a built-in function in Next.js that allows you to fetch 
+ data at build time and pass it as props to your page component.
+  This can help improve the performance of your website by 
+  reducing the amount of data that needs to be loaded at runtime.
+
+export async function getStaticProps() {
+  const posts = await getPosts();
+
+  return {
+    props: {
+      posts
+    }
+  };
+}
+
+--------------------------------------------
+
+getStaticPaths()
+ is a built-in function in Next.js that allows you to define
+  a list of paths that should be pre-generated at build time.
+   This can help improve the performance of your website by 
+   reducing the amount of data that needs to be loaded at runtime.
+
+   function Blog({ post }) {
+  return (
+    <div>
+      <h2>{post.title}</h2>
+      <p>{post.content}</p>
+    </div>
+  );
+}
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+
+  const paths = posts.map(post => ({
+    params: { id: post.id.toString() }
+  }));
+
+  return {
+    paths,
+    fallback: false
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const post = await getPost(params.id);
+
+  return {
+    props: {
+      post
+    }
+  };
+}
+
+export default Blog;
+
+------------------------------------
+

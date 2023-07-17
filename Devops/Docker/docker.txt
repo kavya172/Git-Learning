@@ -1,0 +1,43 @@
+What is docker??
+
+Docker is a tool which creates the virtual machine. -> Containerization
+
+Docker is advanced form of Virtualization
+
+ Docker is a popular open-source platform for developing, packaging,
+ and deploying applications in containers. A container is a lightweight 
+ and standalone executable package that includes everything needed to 
+ run an application, such as the code, runtime, system tools, libraries, 
+ and settings. Containers are isolated from the host and other containers,
+ which provides consistency and reproducibility across different environments.
+
+ Docker ia an open-source Centralized platform designed to create, deploy and 
+ run application.
+
+ Docker is written in go language.
+
+ Docker is a set of platform as a service that uses OS Level Virtualization.
+
+
+ Components of Docker
+
+ Docker Daemon
+
+ Docker Client
+
+ Docker host
+ 
+ Docker Hub
+
+    public registries
+
+    Private registries
+
+Docker Images
+    It is read only binary template used to create the docker container  
+
+Ways to create the Docker Images
+
+Docker Container 
+
+Container is a virtual machine. Docker is a tool which creates the virtual machine

@@ -51,4 +51,15 @@ wget <url>
 Later we can install it using yum. 
 
 
+Permissions in linux 
+
+
+chmod -> Used to change the access mode of the file.
+
+chown -> Used to change the owner of the file/directory
+
+chgrp -. change the group of the file/Directory.
+
+
+
 

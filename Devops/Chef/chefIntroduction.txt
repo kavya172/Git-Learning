@@ -1,0 +1,78 @@
+CHEF -> It is a Configuration Management tool.
+
+System Administrator -> manages all the Servers, installing sofwares, maintaining.
+
+Configuration Management tool. 
+ >> each and Every Minute details of your system.
+ >> Delate, update, Create.
+ >> Part of Operations.
+ >> Infrastructure as a code (IAC) -> Configure the Infrastructure from code.
+Types 
+    >>> push Based
+        >> Pushes Configuration to the nodes.
+            Ansilble, Saltstack 
+
+    >>> pull Based
+        >> Pull Configuration nodes check with the Servers Periodically and fetches the Configuration from it.
+            chef, puppet 
+
+More About chef 
+
+ -> Chef is a company and the name of a Configuration Management tool written in Ruby and enlang
+ -> Actual name was 'Manioniotte" later names as chef.
+ ->used by Facebook, AWS, opswork, HP public cloud.
+ -> chef is an administration tool which can do automatically.
+ -> Automate Admin Tasks
+ -> Turns code to Infrastructure.
+ -> So code will be Repeatable, Testable, Versionable.
+
+ Advantages of CM tool
+  > Complete Automation.
+  > Increace UpTime.
+  > Improves Performance.
+  > Ensure compliance.
+  > Prevent errors.
+  > Reduce Cost.
+
+Chef Architecture & Process
+
+Node:
+Chef Server:
+Workspace: Workstations as personal computers or personal servers where all configurations code is created, tested or changed.  
+Knife:
+Bootstrap:
+Chef-Supermarket:
+
+chef-Client:
+Ohai: Database-> current configuration of the machine will be stored.
+Idempotency
+
+To create Cook Book
+    chef generate cookbook cookBookName
+To create Reciepe
+    chef generate recipe recipeName
+To check specification 
+    chef spec ruby -c path
+
+chef-client -zr "recipe[path]"
+
+   >> -z:  This option tells the Chef client to run in local mode,
+     which means that it will not communicate with a Chef server 
+     and will instead read its configuration and recipes from the local system.
+
+   >> -r "recipe[path]": This option specifies the recipe that should be
+    applied by the Chef client. In this case, the recipe is specified as recipe[path],
+     where recipe is a directory containing the recipe and path is the name of the recipe file.
+
+Resources 
+
+Resources represent the different components of a system 
+that can be managed and configured by Chef.
+ Resources define a particular state that a component should be in, 
+ and Chef takes care of ensuring that the component is configured to match that state
+
+Attributes in Chef
+
+Attributes are used to define variables that can be used to store data values.
+Attributes can be used to define settings that are used to configure software,
+ such as the version of a package to install or the location of a configuration file.

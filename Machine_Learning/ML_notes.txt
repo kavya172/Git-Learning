@@ -1,0 +1,8 @@
+Machine Learning
+
+Machine Learing is a subdomain of computer science that focuses on algorithms which help a computer 
+learn from the data without explict programming.
+
+Artificial Intelligence is an area of computer science, where the goal i sto enable computers and machines 
+to perform huaman like tasks and simulate human behavior.
+

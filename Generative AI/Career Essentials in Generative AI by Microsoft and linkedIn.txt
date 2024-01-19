@@ -1,0 +1,39 @@
+What is Generative AI?
+
+Importance of Generative AI.
+	Consice Information.
+	Generate Text, Music, Vedio, 3D assets
+	custom products
+
+
+=> How to encode neural network
+	
+=> Used in New Content, Image generation, video synthesis, Language generation, music composistion.
+
+=> Generative Artifitial Inteligence is designed to generate new content as its primary output
+
+How generative AI works
+
+=>  Generative AI 101 => Models 
+
+=> A model is a set of algorithms that have been trained on a specific dataset.
+=> A notebook is a tool for writing and running the code.
+=> An Application is an exapmple of how a model can be used.
+=> An Outcome is what the end users produces using generative AI or a notebook that houses a model.
+
+Natural Language Models
+
+=> GPT  => Large scale.
+	=> Transform architecture.
+	=> Human Like Text generation.
+
+=> GPT Limitations
+	=> Lack od common sense.
+	=> Lack of creativity.
+	=> No understanding of generated text.
+	=> Biased Databases.
+	=> danger of normalization of mediocity with creative writing.
+
+	
+
+
